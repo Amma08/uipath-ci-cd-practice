@@ -1,0 +1,17 @@
+name: HR Automation Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "My first CI/CD pipeline is running!"
