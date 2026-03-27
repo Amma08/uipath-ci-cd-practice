@@ -1,0 +1,13 @@
+name: HR Automation Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    steps:
+      - checkout code
+      - build robot
+      - deploy robot
